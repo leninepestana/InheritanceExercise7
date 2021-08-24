@@ -11,17 +11,19 @@ Make a program to read data from N pictures (N provided by the user), and then s
 
 Enter the number of shapes: 2\
 Shape #1 data:\
-Rectangle or Circle (r/c)? r\
+Rectangle or Circle (r/c)? R\
 Color (BLACK/BLUE/RED): BLACK\
 Width: 4.0\
 Height: 5.0\
 Shape #2 data:\
-Rectangle or Circle (r/c)? c\
+Rectangle or Circle (r/c)? C\
 Color (BLACK/BLUE/RED): RED\
 Radius: 3.0\
+
 SHAPE AREAS:\
-20.00\
-28.27
+Circle: 28.27\ 
+Rectangle: 20.00\ 
+
 
 
 ![class-diagra-abstract-functions](https://user-images.githubusercontent.com/22635013/130622677-c7cc3577-096f-4b7a-b057-67c6bfe586d7.png)
