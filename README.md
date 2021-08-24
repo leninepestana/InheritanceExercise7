@@ -21,7 +21,7 @@ Color (BLACK/BLUE/RED): RED\
 Radius: 3.0
 
 SHAPE AREAS:\
-Circle: 28.27\ 
+Circle: 28.27 
 Rectangle: 20.00
 
 
