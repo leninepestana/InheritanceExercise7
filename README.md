@@ -1,9 +1,10 @@
 # InheritanceExercise7
-Working with Polymorphism
+
+## Working with Polymorphism 
 
 ### Abstract methods
 
-A method without body (no implementation) is known as abstract method. A method must always be declared in an abstract class, or in other words you can say that if a class has an abstract method, it should be declared abstract as well.
+A method without body (no implementation) is known as `abstract method`. A method must always be declared in an abstract class, or in other words you can say that if a class has an abstract method, it should be declared abstract as well.
 
 
 Make a program to read data from N pictures (N provided by the user), and then show the areas of these figures in the same order in which they were typed.
