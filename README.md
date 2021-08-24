@@ -18,11 +18,11 @@ Height: 5.0\
 Shape #2 data:\
 Rectangle or Circle (r/c)? C\
 Color (BLACK/BLUE/RED): RED\
-Radius: 3.0\
+Radius: 3.0
 
 SHAPE AREAS:\
 Circle: 28.27\ 
-Rectangle: 20.00\ 
+Rectangle: 20.00
 
 
 
