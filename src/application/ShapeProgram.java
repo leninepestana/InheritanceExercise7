@@ -1,10 +1,13 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Circle;
 import entities.Rectangle;
+import entities.Shape;
 import enums.Color;
 
 public class ShapeProgram {
@@ -14,8 +17,7 @@ public class ShapeProgram {
 		Locale.setDefault(Locale.US);		
 		Scanner sc = new Scanner(System.in);
 		
-		Circle circle = new Circle(null, null);
-		Rectangle rectangle = new Rectangle(null, null, null);
+		List<Shape> shape = new ArrayList<>();
 		
 		System.out.print("Enter the number of shapes: ");
 		int n = sc.nextInt();
@@ -32,14 +34,16 @@ public class ShapeProgram {
 			if(Character.toLowerCase(ch) == 'c') {
 				System.out.print("Radius: ");
 				double radius = sc.nextDouble();
-				circle = new Circle(color, radius);
+				Circle circle = new Circle(color, radius);
+				shape.add(circle);
 			}
 			else {
 				System.out.print("Width: ");
 				double width = sc.nextDouble();
 				System.out.print("Height: ");
 				double height = sc.nextDouble();
-				rectangle = new Rectangle(color, width, height);
+				Rectangle rectangle = new Rectangle(color, width, height);
+				shape.add(rectangle);
 			}
 			
 		}
@@ -47,11 +51,9 @@ public class ShapeProgram {
 		System.out.println();
 		
 		System.out.println("SHAPE AREAS: ");
-		if(circle.getRadius() !=null) {
-			System.out.print("Circle: " + circle);			
-		}
-		if(rectangle.getHeight() != null && rectangle.getWidth() != null) {
-			System.out.print("Rectangle: " + rectangle);			
+		
+		for(Shape s : shape) {
+			System.out.println(String.format("%.2f", s.area()));
 		}
 		
 		sc.close();
