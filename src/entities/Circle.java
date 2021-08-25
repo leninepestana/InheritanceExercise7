@@ -1,5 +1,7 @@
 package entities;
 
+import enums.Color;
+
 public class Circle extends Shape {
 
 	private Double radius;
@@ -8,7 +10,8 @@ public class Circle extends Shape {
 	public Circle() {
 	}
 
-	public Circle(Double radius) {
+	public Circle(Color color, Double radius) {
+		super(color);
 		this.radius = radius;
 	}
 
@@ -18,6 +21,10 @@ public class Circle extends Shape {
 
 	public void setRadius(Double radius) {
 		this.radius = radius;
+	}
+
+	public static double getPi() {
+		return PI;
 	}
 
 	@Override

@@ -14,8 +14,8 @@ public class ShapeProgram {
 		Locale.setDefault(Locale.US);		
 		Scanner sc = new Scanner(System.in);
 		
-		Circle circle = new Circle();
-		Rectangle rectangle = new Rectangle();
+		Circle circle = new Circle(null, null);
+		Rectangle rectangle = new Rectangle(null, null, null);
 		
 		System.out.print("Enter the number of shapes: ");
 		int n = sc.nextInt();
@@ -32,14 +32,14 @@ public class ShapeProgram {
 			if(Character.toLowerCase(ch) == 'c') {
 				System.out.print("Radius: ");
 				double radius = sc.nextDouble();
-				circle = new Circle(radius);
+				circle = new Circle(color, radius);
 			}
 			else {
 				System.out.print("Width: ");
 				double width = sc.nextDouble();
 				System.out.print("Height: ");
 				double height = sc.nextDouble();
-				rectangle = new Rectangle(width, height);
+				rectangle = new Rectangle(color, width, height);
 			}
 			
 		}
@@ -47,8 +47,12 @@ public class ShapeProgram {
 		System.out.println();
 		
 		System.out.println("SHAPE AREAS: ");
-		System.out.print("Circle: " + circle);
-		System.out.print("Rectangle: " + rectangle);
+		if(circle.getRadius() !=null) {
+			System.out.print("Circle: " + circle);			
+		}
+		if(rectangle.getHeight() != null && rectangle.getWidth() != null) {
+			System.out.print("Rectangle: " + rectangle);			
+		}
 		
 		sc.close();
 	}
